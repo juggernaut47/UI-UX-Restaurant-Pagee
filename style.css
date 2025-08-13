@@ -1,0 +1,48 @@
+
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:#fff8f3;color:#2b2b2b;line-height:1.5}
+
+/* Header */
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:16px 32px;background:#c64b2f;color:white}
+.brand{font-weight:800;font-size:24px}
+.nav a{color:white;margin-left:18px;text-decoration:none;font-weight:600}
+
+
+
+/* Main */
+main{padding:36px}
+
+/* Menu */
+.menu h2{text-align:center;margin-bottom:18px;font-size:32px}
+.category{margin-top:28px}
+.items{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.item{width:220px;background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08);transition:transform 0.25s ease}
+.item img{width:100%;height:150px;object-fit:cover;display:block;transform-origin:center;transition:transform 0.35s ease}
+.item:hover{transform:translateY(-6px)}
+.item:hover img{transform:scale(1.07)}
+.item h4{padding:10px 12px;font-size:16px}
+.price{padding:0 12px 14px;color:#c64b2f;font-weight:700}
+
+/* About */
+.about{margin-top:36px;text-align:center}
+.about img{width:100%;max-width:720px;margin-top:14px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+
+/* Contact */
+.contact{margin-top:36px;background:#fff4e6;padding:18px;border-radius:8px}
+
+/* Footer */
+.site-footer{background:#c64b2f;color:white;padding:18px 32px;margin-top:36px;display:flex;justify-content:space-between;align-items:center}
+.subscribe input{padding:8px 10px;border-radius:6px;border:0;margin-right:8px}
+.subscribe button{padding:8px 12px;border-radius:6px;border:0;background:white;color:#c64b2f;font-weight:700;cursor:pointer}
+
+/* Responsive */
+@media (max-width:700px){
+  .items{flex-direction:column;align-items:center}
+  .nav{display:none}
+  .hero-overlay h1{font-size:32px}
+}
+
+/* Simple lightbox (clicking opens image in new tab fallback) */
+/* Note: We used anchor links to image files; modern browsers will open image in tab when clicked. */
